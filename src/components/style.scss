@@ -8,6 +8,7 @@
   font-size: 17px;
 
   &-item{
+    flex:1;
     &[data-role=cancel]{
       color: #929292;
     }
@@ -59,5 +60,12 @@
     -webkit-box-align: center;
     -webkit-align-items: center;
     align-items: center;
+
+    :first-child{
+      text-align: left;
+    }
+    :last-child{
+      text-align: right;
+    }
   }
 }
